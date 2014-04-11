@@ -1,0 +1,77 @@
+doctype html
+html(lang='es')
+  head
+    
+    
+    meta(charset='utf8')
+    
+    //- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    //- Remove this if you use the .htaccess
+    meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+    
+    //- SEO
+    meta(name='author' content='serchserch')
+    meta(name='description' content='Adoptar mascotas')
+    
+    
+    //- For node.js title= title
+    //- For backbone title <%= title %>
+    //- For backbone atribute use != href!='<%= title %>' 
+    title Blaa
+    
+    
+    link(rel='shortcut icon' href='/favicon.ico')
+    link(rel='apple-touch-icon' href='/apple-touch-icon.png')
+        
+    //- Styles
+    link(rel='stylesheet', href='css/style.css')
+    
+    
+    //- To exports underscore templates engine <%= variable.contents %>
+    
+    
+  body
+    
+    #container
+    
+      video(id='videoHTML5-1' width='640' height='390' controls='' autoplay='true' name='media' autobuffer='true')
+        source(src='http://localhost:3000/video/ogg/1' type='video/ogg')
+        source(src='http://localhost:3000/video/mp4/1' type='video/mp4')
+        source(src='http://localhost:3000/video/webm/1' type='video/webm')
+      
+      //- video(id='videoHTML5-2' width='640' height='390' controls='' autoplay='true' name='media' autobuffer='true')
+        //- source(src='http://localhost:3000/video/ogg/2' type='video/ogg')
+        //- source(src='http://localhost:3000/video/mp4/2' type='video/mp4')
+        //- source(src='http://localhost:3000/video/webm/2' type='video/webm')
+
+
+      form(action='auth' method='POST')
+        input(type='text' value='sergio.morlan@globalcorporation.cc' name='idCorreo')
+        input(type='password' value='sergio' name='pass')
+        button Login
+      //- video(id='videoHTML5-3' width='640' height='390' controls='' autoplay='true' name='media' autobuffer='true')
+        //- source(src='http://localhost:3000/video/webm/3' type='video/mp4')      
+
+      //- video(id='videoHTML5-4' controls='' autoplay='true' name='media' autobuffer='true')
+        //- source(src='http://localhost:3000/video/webm/1' type='video/webm')
+
+      //- video(id='videoHTML5-5' controls='' autoplay='true' name='media' autobuffer='true')
+        //- source(src='http://localhost:3000/video/webm/1' type='video/webm')
+      
+      //- video(id='videoHTML5-6' controls='' autoplay='true' name='media' autobuffer='true')
+        //- source(src='http://localhost:3000/video/webm/1' type='video/webm')
+
+      //- video(id='videoHTML5-7' controls='' autoplay='true' name='media' autobuffer='true')
+        //- source(src='http://localhost:3000/video/webm/1' type='video/webm')      
+
+      //- video(id='videoHTML5-8' controls='' autoplay='true' name='media' autobuffer='true')
+        //- source(src='http://localhost:3000/video/webm/1' type='video/webm')
+        
+      //-a(id='player' style='display:block;width:520px;height:330px')
+    
+    //- For fb-APi
+    #fb-root
+    
+    //- Load all client logic 
+    script(data-main='js/main' src='js/libs/require.min.js')
+    

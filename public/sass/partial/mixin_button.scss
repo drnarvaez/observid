@@ -1,0 +1,15 @@
+
+
+
+@mixin mixin_button($color: red, $color2: red){
+    @include background(linear-gradient($color, $color2) left repeat);
+    @include mixin_roundbox(2px,2px,2px,2px, none);
+    cursor: pointer;
+}
+
+@mixin mixin_button_red(){
+    @include mixin_button(#d52b1e, #941b12);
+    @include mixin_shadowbox(0px, 3px, 2px, rgba(0,0,0,0.2));
+    color: #FFF;
+    text-align: center;
+}

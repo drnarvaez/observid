@@ -1,0 +1,124 @@
+#SplashTemplate
+  @include size(100%)
+  background-image: url('http://st.gdefon.com/wallpapers_original/wallpapers/408075_razmytie_fon_rozovyj_oranzhevyj_svet_1680x1050_(www.GdeFon.ru).jpg')
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-position: center
+  background-size: 100% 100%
+  display: -ms-flexbox
+  -ms-box-orient: vertical
+
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: flex
+  
+  -webkit-box-align: center
+  -moz-box-align: center
+  -ms-flex-align: center
+  -webkit-align-items: center
+  align-items: center
+  
+  -webkit-flex-flow: row wrap
+  -moz-flex-flow: row wrap
+  -ms-flex-flow: row wrap
+  flex-flow: row wrap
+          
+  #bg
+    @include position(absolute, 0px 0 0 0px)
+    @include size(100%)
+    z-index: -2 
+    overflow: hidden   
+    img
+      @include size(100%)
+      min-width: 100%
+      min-height: 100%
+      max-width: 150%
+      max-height: 150%
+    
+  header
+    @include size(100% 200px)
+    text-align: center
+    -webkit-flex: 2
+    -moz-flex: 2
+    -ms-flex: 2
+    flex: 2
+     
+    hgroup
+      @include transform(rotateY(0deg))  
+      @include animation-duration(.5s)
+      @include animation-timing-function(ease-out)
+      @include animation-fill-mode(forwards)  
+      h1
+        @include perspective(300px)
+        span
+          @extend .font-bold
+          color: white
+          text-shadow: .1rem .1rem .1rem rgba(0,0,0,.4)
+          font-size: 2rem
+          text-transform: uppercase
+          display: inline
+          padding: 1rem 3rem
+          border: .2rem solid #FFF 
+      
+      // Subtitle
+      h2
+        margin: 0
+        span
+          @extend .font-regular
+          color: white
+          text-shadow: .1rem .1rem .1rem rgba(0,0,0,.4)
+          font-size: 1.1rem
+      
+      
+      // Slogan
+      h3
+        margin: 0
+        em
+          @extend .font-regular
+          color: white
+          text-shadow: .1rem .1rem .1rem rgba(0,0,0,.4)
+          font-size: 1rem
+    
+    
+    // 'link' to Login    
+    >span
+      @include position(absolute, 1rem 1rem 0 0)
+      a
+        color: white
+        text-shadow: .1rem .1rem .1rem rgba(0,0,0,.2)
+        font-size: 1rem
+        cursor: pointer
+    
+
+
+.fx_HeaderOut
+  @include animation-name(fx_HeaderOut)
+  //@include animation-iteration-count(infinite)  
+
+
+.fx_HeaderIn
+  @include animation-name(fx_HeaderIn)
+  //@include animation-iteration-count(infinite)  
+
+
+
+
+
+// Animación hgroup
+@include keyframes(fx_HeaderOut) 
+  from 
+    @include transform(rotateY(0deg))
+  
+  to 
+    @include transform(rotateY(90deg))
+    
+    
+// Animación hgroup
+@include keyframes(fx_HeaderIn) 
+  from 
+    @include transform(rotateY(90deg))
+  
+  to 
+    @include transform(rotateY(0deg))
+  

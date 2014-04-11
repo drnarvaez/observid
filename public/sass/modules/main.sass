@@ -1,0 +1,43 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700)
+
+body
+  @include size(100%)
+  margin: 0
+  padding: 0
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  
+
+
+.bodyNoScroll
+  @include position (fixed, 0px 0 0 0px)
+  @include size(100%)
+  margin: 0
+  padding: 0
+
+
+
+.font-regular
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  
+
+.font-bold
+  font-family: 'Open Sans', sans-serif
+  font-weight: 700
+  
+  
+#container
+  @include size(100%)
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+
+button
+  &:active
+    outline: none
+  &:focus
+    outline: none  

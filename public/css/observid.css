@@ -1,0 +1,685 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.bodyNoScroll {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.font-regular, #SplashTemplate header hgroup h2 span, #SplashTemplate header hgroup h3 em {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.font-bold, #SplashTemplate header hgroup h1 span, #LogInTemplate form h1 span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:active {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+
+#SplashTemplate {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://st.gdefon.com/wallpapers_original/wallpapers/408075_razmytie_fon_rozovyj_oranzhevyj_svet_1680x1050_(www.GdeFon.ru).jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+  display: -ms-flexbox;
+  -ms-box-orient: vertical;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+#SplashTemplate #bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+#SplashTemplate #bg img {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  max-height: 150%;
+}
+#SplashTemplate header {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  -webkit-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+#SplashTemplate header hgroup {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+#SplashTemplate header hgroup h1 {
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  perspective: 300px;
+}
+#SplashTemplate header hgroup h1 span {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: inline;
+  padding: 1rem 3rem;
+  border: 0.2rem solid white;
+}
+#SplashTemplate header hgroup h2 {
+  margin: 0;
+}
+#SplashTemplate header hgroup h2 span {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+  font-size: 1.1rem;
+}
+#SplashTemplate header hgroup h3 {
+  margin: 0;
+}
+#SplashTemplate header hgroup h3 em {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+}
+#SplashTemplate header > span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+#SplashTemplate header > span a {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.fx_HeaderOut {
+  -webkit-animation-name: fx_HeaderOut;
+  -moz-animation-name: fx_HeaderOut;
+  animation-name: fx_HeaderOut;
+}
+
+.fx_HeaderIn {
+  -webkit-animation-name: fx_HeaderIn;
+  -moz-animation-name: fx_HeaderIn;
+  animation-name: fx_HeaderIn;
+}
+
+@-webkit-keyframes fx_HeaderOut {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+
+  to {
+    -webkit-transform: rotateY(90deg);
+  }
+}
+@-moz-keyframes fx_HeaderOut {
+  from {
+    -moz-transform: rotateY(0deg);
+  }
+
+  to {
+    -moz-transform: rotateY(90deg);
+  }
+}
+@-o-keyframes fx_HeaderOut {
+  from {
+    -o-transform: rotateY(0deg);
+  }
+
+  to {
+    -o-transform: rotateY(90deg);
+  }
+}
+@keyframes fx_HeaderOut {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(90deg);
+  }
+}
+@-webkit-keyframes fx_HeaderIn {
+  from {
+    -webkit-transform: rotateY(90deg);
+  }
+
+  to {
+    -webkit-transform: rotateY(0deg);
+  }
+}
+@-moz-keyframes fx_HeaderIn {
+  from {
+    -moz-transform: rotateY(90deg);
+  }
+
+  to {
+    -moz-transform: rotateY(0deg);
+  }
+}
+@-o-keyframes fx_HeaderIn {
+  from {
+    -o-transform: rotateY(90deg);
+  }
+
+  to {
+    -o-transform: rotateY(0deg);
+  }
+}
+@keyframes fx_HeaderIn {
+  from {
+    transform: rotateY(90deg);
+  }
+
+  to {
+    transform: rotateY(0deg);
+  }
+}
+#LogInTemplate {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://st.gdefon.com/wallpapers_original/wallpapers/408075_razmytie_fon_rozovyj_oranzhevyj_svet_1680x1050_(www.GdeFon.ru).jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+  display: -ms-flexbox;
+  -ms-box-orient: vertical;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+#LogInTemplate form {
+  width: 230px;
+  height: auto;
+  position: relative;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  margin: -150px auto 0 auto;
+  display: none;
+}
+#LogInTemplate form h1 span {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+}
+#LogInTemplate form input {
+  width: 92%;
+  height: auto;
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem 4%;
+  background: transparent;
+  border: 0.1rem solid transparent;
+  border-bottom: 0.1rem dashed white;
+  color: rgba(255, 255, 255, 0.8);
+}
+#LogInTemplate form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#LogInTemplate form input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#LogInTemplate form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#LogInTemplate form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#LogInTemplate form input:focus {
+  border-bottom: 0.1rem dashed white;
+  outline: none;
+  color: white;
+}
+#LogInTemplate form input:focus::-webkit-input-placeholder {
+  color: white;
+}
+#LogInTemplate form input:focus:-moz-placeholder {
+  color: white;
+}
+#LogInTemplate form input:focus::-moz-placeholder {
+  color: white;
+}
+#LogInTemplate form input:focus:-ms-input-placeholder {
+  color: white;
+}
+#LogInTemplate form a {
+  position: relative;
+  top: 2.1rem;
+  color: white;
+  font-size: 0.9rem;
+}
+#LogInTemplate form button:nth-child(5) {
+  position: absolute;
+  right: 0rem;
+  width: 7.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+  border: 0.13rem solid white;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+#LogInTemplate form button:nth-child(6) {
+  width: 14rem;
+  height: auto;
+  background: #29447e;
+  color: white;
+  border: none;
+  display: block;
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+  margin: 3rem auto;
+  cursor: pointer;
+}
+#LogInTemplate form button:nth-child(6) i {
+  margin: 0 0 0 0.7rem;
+}
+#LogInTemplate form button:nth-child(6) i:before {
+  position: relative;
+  top: 0.1rem;
+  content: "\f09a";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.fx_FormIn {
+  -webkit-animation-name: fx_FormIn;
+  -moz-animation-name: fx_FormIn;
+  animation-name: fx_FormIn;
+}
+
+.fx_FormInStatic {
+  -webkit-animation-name: fx_FormInStatic;
+  -moz-animation-name: fx_FormInStatic;
+  animation-name: fx_FormInStatic;
+}
+
+.fx_FormOut {
+  -webkit-animation-name: fx_FormOut;
+  -moz-animation-name: fx_FormOut;
+  animation-name: fx_FormOut;
+}
+
+.fx_FormShake {
+  -webkit-animation-name: fx_FormShake;
+  -moz-animation-name: fx_FormShake;
+  animation-name: fx_FormShake;
+}
+
+@-webkit-keyframes fx_FormInStatic {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+
+  to {
+    -webkit-transform: scale(1, 1);
+  }
+}
+@-moz-keyframes fx_FormInStatic {
+  from {
+    -moz-transform: scale(1, 1);
+  }
+
+  to {
+    -moz-transform: scale(1, 1);
+  }
+}
+@-o-keyframes fx_FormInStatic {
+  from {
+    -o-transform: scale(1, 1);
+  }
+
+  to {
+    -o-transform: scale(1, 1);
+  }
+}
+@keyframes fx_FormInStatic {
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes fx_FormIn {
+  from {
+    -webkit-transform: scale(0, 0);
+  }
+
+  to {
+    -webkit-transform: scale(1, 1);
+  }
+}
+@-moz-keyframes fx_FormIn {
+  from {
+    -moz-transform: scale(0, 0);
+  }
+
+  to {
+    -moz-transform: scale(1, 1);
+  }
+}
+@-o-keyframes fx_FormIn {
+  from {
+    -o-transform: scale(0, 0);
+  }
+
+  to {
+    -o-transform: scale(1, 1);
+  }
+}
+@keyframes fx_FormIn {
+  from {
+    transform: scale(0, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes fx_FormOut {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+
+  to {
+    -webkit-transform: scale(0, 0);
+  }
+}
+@-moz-keyframes fx_FormOut {
+  from {
+    -moz-transform: scale(1, 1);
+  }
+
+  to {
+    -moz-transform: scale(0, 0);
+  }
+}
+@-o-keyframes fx_FormOut {
+  from {
+    -o-transform: scale(1, 1);
+  }
+
+  to {
+    -o-transform: scale(0, 0);
+  }
+}
+@keyframes fx_FormOut {
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(0, 0);
+  }
+}
+@-webkit-keyframes fx_FormShake {
+  0% {
+    -webkit-transform: translate(2px);
+  }
+
+  10% {
+    -webkit-transform: translate(-2px);
+  }
+
+  20% {
+    -webkit-transform: translate(2px);
+  }
+
+  30% {
+    -webkit-transform: translate(-2px);
+  }
+
+  40% {
+    -webkit-transform: translate(2px);
+  }
+
+  50% {
+    -webkit-transform: translate(-2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px);
+  }
+
+  70% {
+    -webkit-transform: translate(-2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px);
+  }
+
+  90% {
+    -webkit-transform: translate(-2px);
+  }
+
+  100% {
+    -webkit-transform: translate(2px);
+  }
+}
+@-moz-keyframes fx_FormShake {
+  0% {
+    -moz-transform: translate(2px);
+  }
+
+  10% {
+    -moz-transform: translate(-2px);
+  }
+
+  20% {
+    -moz-transform: translate(2px);
+  }
+
+  30% {
+    -moz-transform: translate(-2px);
+  }
+
+  40% {
+    -moz-transform: translate(2px);
+  }
+
+  50% {
+    -moz-transform: translate(-2px);
+  }
+
+  60% {
+    -moz-transform: translate(2px);
+  }
+
+  70% {
+    -moz-transform: translate(-2px);
+  }
+
+  80% {
+    -moz-transform: translate(2px);
+  }
+
+  90% {
+    -moz-transform: translate(-2px);
+  }
+
+  100% {
+    -moz-transform: translate(2px);
+  }
+}
+@-o-keyframes fx_FormShake {
+  0% {
+    -o-transform: translate(2px);
+  }
+
+  10% {
+    -o-transform: translate(-2px);
+  }
+
+  20% {
+    -o-transform: translate(2px);
+  }
+
+  30% {
+    -o-transform: translate(-2px);
+  }
+
+  40% {
+    -o-transform: translate(2px);
+  }
+
+  50% {
+    -o-transform: translate(-2px);
+  }
+
+  60% {
+    -o-transform: translate(2px);
+  }
+
+  70% {
+    -o-transform: translate(-2px);
+  }
+
+  80% {
+    -o-transform: translate(2px);
+  }
+
+  90% {
+    -o-transform: translate(-2px);
+  }
+
+  100% {
+    -o-transform: translate(2px);
+  }
+}
+@keyframes fx_FormShake {
+  0% {
+    transform: translate(2px);
+  }
+
+  10% {
+    transform: translate(-2px);
+  }
+
+  20% {
+    transform: translate(2px);
+  }
+
+  30% {
+    transform: translate(-2px);
+  }
+
+  40% {
+    transform: translate(2px);
+  }
+
+  50% {
+    transform: translate(-2px);
+  }
+
+  60% {
+    transform: translate(2px);
+  }
+
+  70% {
+    transform: translate(-2px);
+  }
+
+  80% {
+    transform: translate(2px);
+  }
+
+  90% {
+    transform: translate(-2px);
+  }
+
+  100% {
+    transform: translate(2px);
+  }
+}

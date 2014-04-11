@@ -1,0 +1,16 @@
+
+
+@mixin mixin_shadowbox($top: 5px, $left: 5px, $blur: 5px, $color: #000, $inset: none){
+    @if $inset == inset {
+
+        -moz-box-shadow: $inset $top $left $blur $color;
+        -webkit-box-shadow: $inset $top $left $blur $color;
+        box-shadow: $inset $top $left $blur $color; 
+    }@else{
+        -moz-box-shadow: $top $left $blur $color;
+        -webkit-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color; 
+    }
+
+
+}
